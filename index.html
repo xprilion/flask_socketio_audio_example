@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="audio/styles.css">
+    </head>
+    <body>
+        <div id="viz">
+            <canvas id="analyser" width="1024" height="500"></canvas>
+            <div id="wavedisplay">
+                <div id="wavefiles">
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <img id="record" src="audio/mic128.png" onclick="toggleRecording(this);">
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js" integrity="sha512-eVL5Lb9al9FzgR63gDs1MxcDS2wFu3loYAgjIH0+Hg38tCS8Ag62dwKyH+wzDb+QauDpEZjXbMn11blw8cbTJQ==" crossorigin="anonymous"></script>
+        <script src="audio/main.js"></script>
+    </body>
+</html>
